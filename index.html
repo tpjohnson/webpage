@@ -1,6 +1,7 @@
 <head> 
   <title> TJ Site </title>
   <link rel="stylesheet" type="text/css" href="style.css">
+  <script src = "http://d3js.org/d3.v3.min.js"> </script>
 </head>
 <body>
   <h1> Trevor Johnson </h1>
@@ -8,9 +9,25 @@
     <li> list item 1 </li>
     <li> list item 2 </li>
   </ul>
+  
+  <script> 
+  var theCanvas = d3.select("body")
+    .append("svg")
+    .attr("width", 500)
+    .attr("height", 500);
+    
+  theCanvas.append("circle")
+    .attr("cx", 250)
+    .attr("cy", 250)
+    .attr("r", 100)
+    .attr("fill", "blue");
+  
+  </script>
+  
 </body>
 <style>
   body {
-  background-color: blue;
+  background-color: grey;
+    
   }
 </style>
